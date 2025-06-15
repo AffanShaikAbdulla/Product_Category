@@ -7,12 +7,14 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
 import jakarta.validation.constraints.Size;
+import lombok.Data;
 
 /**
  * DTo for accepting prodcut creation/update request from API Includes
  * validation annotation for buisness rules
  * 
  */
+@Data
 public class ProductRequestDTO {
 	@NotBlank(message = "Prouct name is mandatory")
 	@Size(max = 30, message = "Name cant be exceed 30 charecters")

@@ -1,6 +1,14 @@
 package in.product.dto;
 
+import java.math.BigDecimal;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
 
 /**
  * DTO for sening product deatls in API response includes computed feilds(eg:
@@ -8,6 +16,12 @@ import lombok.Data;
  * 
  */
 @Data
+@Getter
+@Setter
+@ToString
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class ProductResponseDTO {
 
 	private Integer productId;
